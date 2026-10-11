@@ -7,6 +7,7 @@ class User1(User):
 
 
 class Solve(models.Model):
-    time = models.CharField(max_length=150)
+    time = models.FloatField()
     scramble = models.CharField(max_length=150)
+    created = models.DateTimeField(auto_now_add=True)
 

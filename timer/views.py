@@ -5,4 +5,5 @@ from .scrambles import scramblegen
 
 # Create your views here.
 def timer(request):
-    return HttpResponse(scramblegen(20))
+    current_scramble=scramblegen(20)
+    return render(request, 'timer/template.html', {"current_scramble":current_scramble})
