@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,8 @@
     <title>Timer</title>
 </head>
 <body>
-    <h1>{{current_scramble}}</h1>
+    <h1 id = "scramblehtml">{{current_scramble}}</h1>
+    <h2 id="stopwatch">00:00</h2>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
